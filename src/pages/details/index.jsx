@@ -13,6 +13,8 @@ export default function Details() {
     HandleAddToFavorites,
   } = useContext(GlobalContext);
 
+  console.log("Favorites List:", favoritesList);
+
   useEffect(() => {
     async function recipeDetails() {
       const response = await fetch(
